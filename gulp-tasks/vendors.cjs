@@ -1,8 +1,13 @@
 "use strict";
-var gulp = require("gulp");
-var concat = require("gulp-concat");
-var merge = require("merge-stream");
-const del = require("del");
+// var gulp = require("gulp");
+// var concat = require("gulp-concat");
+// var merge = require("merge-stream");
+// const del = require("del");
+
+import gulp from 'gulp'
+import concat from 'gulp-concat'
+import merge from 'merge-stream'
+import del from 'del'
 
 gulp.task("clean:vendors", function () {
   return del(["src/assets/vendors/**/*"]);

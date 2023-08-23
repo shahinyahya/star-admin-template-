@@ -1,11 +1,19 @@
 "use strict";
-var gulp = require("gulp");
-var injectPartials = require("gulp-inject-partials");
-var inject = require("gulp-inject");
-var rename = require("gulp-rename");
-var prettify = require("gulp-prettify");
-var replace = require("gulp-replace");
-var merge = require("merge-stream");
+// var gulp = require("gulp");
+// var injectPartials = require("gulp-inject-partials");
+// var inject = require("gulp-inject");
+// var rename = require("gulp-rename");
+// var prettify = require("gulp-prettify");
+// var replace = require("gulp-replace");
+// var merge = require("merge-stream");
+
+import gulp from "gulp"
+import injectPartials from "gulp-inject-partials"
+import inject from "gulp-inject"
+// import rename from "gulp-rename"
+import prettify from "gulp-prettify"
+import replace from "gulp-replace"
+import merge from "merge-stream"
 
 /* inject partials like sidebar and navbar */
 gulp.task("injectPartial", function () {
